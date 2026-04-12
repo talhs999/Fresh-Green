@@ -79,9 +79,9 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-4">
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95"
+              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap"
             >
-              Quote
+              Get a Quote
             </Link>
             <button
               className="text-white hover:text-brand-accent transition-colors"
