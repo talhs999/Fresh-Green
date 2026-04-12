@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Leaf, Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,11 +9,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Col */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2">
-              <Leaf className="w-8 h-8 text-brand-accent" />
-              <span className="font-display font-bold text-2xl text-white tracking-tight">
-                Fresh<span className="text-brand-accent">Green</span>
-              </span>
+            <Link href="/" className="flex items-center gap-3 mb-2 shrink-0">
+              <div className="bg-white/10 rounded-xl p-2 shrink-0">
+                 <Image src="/logo.png" alt="Fresh Green Gardening Logo" width={60} height={60} className="object-contain brightness-0 invert" />
+              </div>
             </Link>
             <p className="text-sm leading-relaxed text-brand-text-light/80">
               Professional gardening and landscaping services in Perth. We pride ourselves on creating and maintaining beautiful, natural environments that enhance any property.

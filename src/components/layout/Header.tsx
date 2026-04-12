@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Menu, X, Leaf } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,8 +43,14 @@ export default function Header() {
               : "bg-brand-dark px-6 py-4"
           )}
         >
-          <Link href="/" className="flex items-center gap-2 group">
-            <Leaf className="w-8 h-8 text-brand-accent group-hover:text-brand-accent-glow transition-colors" />
+          <Link href="/" className="flex items-center gap-3 group shrink-0">
+            <Image 
+              src="/logo.png" 
+              alt="Fresh Green Gardening Logo" 
+              width={48} 
+              height={48} 
+              className="object-contain group-hover:scale-105 transition-transform" 
+            />
             <span className="font-display font-bold text-xl text-white tracking-tight flex items-center">
               Fresh<span className="text-brand-accent">Green</span>
             </span>

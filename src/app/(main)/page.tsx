@@ -7,22 +7,14 @@ import { CheckCircle2, Trophy, Clock, BadgeCheck, ArrowRight, Leaf } from "lucid
 import { PortfolioCarousel } from "@/components/sections/PortfolioCarousel";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { ProcessSection } from "@/components/sections/ProcessSection";
+import { HeroSlider } from "@/components/sections/HeroSlider";
 
 export default function Home() {
   return (
     <>
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero.png"
-            alt="Beautiful landscaped garden in Perth"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-          <div className="absolute inset-0 bg-brand-dark/60 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent" />
-        </div>
+        {/* Background Image Slider */}
+        <HeroSlider />
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-20 pb-40">
           <div className="max-w-4xl">
