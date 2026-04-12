@@ -47,19 +47,19 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="pt-6 grid grid-cols-2 gap-6">
+              <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                  {[
                   { label: "Experience", value: "15+ Years", icon: Clock },
                   { label: "Fully Insured", value: "100%", icon: BadgeCheck },
                   { label: "Projects", value: "500+", icon: Trophy },
                   { label: "Satisfaction", value: "Guaranteed", icon: CheckCircle2 },
                 ].map((stat, i) => (
-                  <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-black/5 flex items-center justify-start gap-4">
+                  <div key={i} className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-black/5 flex items-center justify-start gap-4">
                      <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center shrink-0">
                       <stat.icon className="w-6 h-6 text-brand-primary" />
                     </div>
                     <div>
-                       <p className="font-bold text-brand-dark">{stat.value}</p>
+                       <p className="font-bold text-brand-dark text-lg md:text-base">{stat.value}</p>
                        <p className="text-xs text-brand-dark/60 uppercase tracking-wider">{stat.label}</p>
                     </div>
                   </div>
