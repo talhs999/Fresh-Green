@@ -47,13 +47,10 @@ export default function Header() {
             <Image 
               src="/logo.png" 
               alt="Fresh Green Gardening Logo" 
-              width={48} 
-              height={48} 
-              className="object-contain group-hover:scale-105 transition-transform" 
+              width={200} 
+              height={100} 
+              className="w-auto h-16 md:h-20 object-contain group-hover:scale-105 transition-transform" 
             />
-            <span className="font-display font-bold text-xl text-white tracking-tight flex items-center">
-              Fresh<span className="text-brand-accent">Green</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}

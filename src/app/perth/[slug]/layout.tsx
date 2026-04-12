@@ -13,8 +13,7 @@ export default function AdLayout({
       <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-black/5">
         <div className="container mx-auto px-6 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group shrink-0">
-            <Image src="/logo.png" alt="Fresh Green Gardening Logo" width={48} height={48} className="object-contain group-hover:scale-105 transition-transform" />
-            <span className="font-display font-bold text-xl text-brand-dark tracking-tight">Fresh Green</span>
+            <Image src="/logo.png" alt="Fresh Green Gardening Logo" width={200} height={100} className="w-auto h-16 object-contain group-hover:scale-105 transition-transform" />
           </Link>
           <a href="tel:0408086923" className="flex items-center gap-3">
              <span className="hidden sm:block text-sm font-bold text-brand-dark/60 uppercase tracking-widest">Call Now</span>
