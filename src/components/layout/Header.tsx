@@ -49,7 +49,7 @@ export default function Header() {
               alt="Fresh Green Gardening Logo" 
               width={200} 
               height={80} 
-              className="w-auto h-10 md:h-14 object-contain group-hover:scale-105 transition-transform" 
+              className="w-auto h-14 md:h-16 object-contain group-hover:scale-105 transition-transform" 
             />
           </Link>
 
