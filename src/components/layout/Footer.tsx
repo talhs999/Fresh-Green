@@ -82,11 +82,26 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-brand-text-light/60">
-        <p>&copy; {new Date().getFullYear()} Fresh Green Gardening. All rights reserved.</p>
-        <div className="flex gap-6">
-          <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+      <div className="container mx-auto px-6 max-w-7xl flex flex-col items-center gap-4 text-sm text-brand-text-light/60">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+          <p>&copy; {new Date().getFullYear()} Fresh Green Gardening. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
+        </div>
+        <div className="w-full text-center mt-2 pt-6 border-t border-white/5 text-brand-text-light/40">
+          <p>
+            Website Designed & Developed by{" "}
+            <a 
+              href="https://www.lumasofts.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-brand-text-light hover:text-brand-accent transition-colors font-medium border-b border-transparent hover:border-brand-accent"
+            >
+              Lumasofts
+            </a>
+          </p>
         </div>
       </div>
     </footer>
