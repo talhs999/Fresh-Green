@@ -75,13 +75,21 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className="md:hidden text-white hover:text-brand-accent transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Actions */}
+          <div className="flex md:hidden items-center gap-4">
+            <Link
+              href="/contact"
+              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95"
+            >
+              Quote
+            </Link>
+            <button
+              className="text-white hover:text-brand-accent transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
