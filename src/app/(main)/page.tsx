@@ -175,6 +175,9 @@ export default function Home() {
       {/* Reviews Section */}
       <GoogleReviews />
 
+      {/* Suburbs We Serve */}
+      <SuburbsSection variant="compact" />
+
       {/* CTA */}
       <section className="py-24 bg-brand-accent relative overflow-hidden">
         <div className="absolute -top-[50%] -right-[10%] w-[80%] h-[200%] bg-white/10 rotate-12 blur-3xl pointer-events-none" />

@@ -174,8 +174,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Suburbs We Serve - Marquee Variant */}
-      <SuburbsSection variant="marquee" />
+      {/* Suburbs We Serve - Categorized Variant */}
+      <SuburbsSection variant="categorized" />
     </>
   );
 }
