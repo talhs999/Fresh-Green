@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { servicesData } from "@/lib/services-data";
 import { ArrowRight, Leaf, CheckCircle2 } from "lucide-react";
+import { SuburbsSection } from "@/components/sections/SuburbsSection";
 
 export default function ServicesPage() {
   return (
@@ -71,6 +72,8 @@ export default function ServicesPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <SuburbsSection variant="compact" />
     </>
   );
 }

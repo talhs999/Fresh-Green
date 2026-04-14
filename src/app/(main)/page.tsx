@@ -8,6 +8,7 @@ import { PortfolioCarousel } from "@/components/sections/PortfolioCarousel";
 import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { HeroSlider } from "@/components/sections/HeroSlider";
+import { SuburbsSection } from "@/components/sections/SuburbsSection";
 
 export default function Home() {
   return (

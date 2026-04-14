@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
+import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { servicesData } from "@/lib/services-data";
 import { supabase } from "@/lib/supabase";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
@@ -172,6 +173,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Suburbs We Serve - Marquee Variant */}
+      <SuburbsSection variant="marquee" />
     </>
   );
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
+import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { servicesData } from "@/lib/services-data";
 import { CheckCircle2, ArrowRight, HelpCircle } from "lucide-react";
 
@@ -151,6 +152,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </div>
         </div>
       </section>
+
+      <SuburbsSection variant="compact" />
     </>
   );
 }
