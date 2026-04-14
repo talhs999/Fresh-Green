@@ -1,0 +1,22 @@
+export const perthSuburbs = [
+  "Alexander Heights", "Alfred Cove", "Alkimos", "Applecross", "Armadale", "Ascot", "Ashfield", "Balcatta", "Balga", "Ballajura",
+  "Bayswater", "Beckenham", "Bedford", "Beechboro", "Belmont", "Bentley", "Bibra Lake", "Bickley", "Bicton", "Bull Creek",
+  "Burswood", "Byford", "Canning Vale", "Cannington", "Carabooda", "Carine", "Carlisle", "Caversham", "Champion Lakes",
+  "Chidlow", "Churchlands", "City Beach", "Claremont", "Clarkson", "Clifton Park", "Cloverdale", "Cockburn Central", "Como",
+  "Connolly", "Coogee", "Cooloongup", "Cottesloe", "Craigie", "Crawley", "Dalkeith", "Darch", "Dianella", "Doubleview",
+  "Duncraig", "East Cannington", "East Fremantle", "East Perth", "East Rockingham", "East Victoria Park", "Eglinton",
+  "Ellenbrook", "Embleton", "Ferndale", "Floreat", "Forrestdale", "Forrestfield", "Fremantle", "Glen Forrest", "Glendalough",
+  "Gnangara", "Golden Bay", "Gosnells", "Greenwood", "Guildford", "Hamersley", "Hamilton Hill", "Hammond Park", "Harrisdale",
+  "Hazelmere", "Henley Brook", "Hilbert", "Hillarys", "Hilton", "Huntingdale", "Inglewood", "Innaloo", "Jandakot", "Joondalup",
+  "Joondanna", "Kalamunda", "Karawara", "Karrinyup", "Kelmscott", "Kelscott", "Kensington", "Kenwick", "Kewdale", "Kings Park",
+  "Kingsley", "Koondoola", "Kwinana Beach", "Landsdale", "Langford", "Leederville", "Lynwood", "Maddington", "Malaga",
+  "Mandogalup", "Manning", "Maylands", "Medina", "Melville", "Menora", "Midland", "Midvale", "Mirrabooka", "Morley",
+  "Mosman Park", "Mount Claremont", "Mount Lawley", "Mount Nasura", "Mount Pleasant", "Mount Richon", "Murdoch", "Nedlands",
+  "Nollamara", "Noranda", "North Beach", "North Coogee", "North Fremantle", "North Lake", "North Perth", "Northbridge",
+  "Ocean Reef", "Osborne Park", "Padbury", "Parkerville", "Parkwood", "Perth (CBD)", "Piara Waters", "Pickering Brook",
+  "Queens Park", "Redcliffe", "Ridgewood", "Riverton", "Rivervale", "Scarborough", "Secret Harbour", "Shelley", "Sorrento",
+  "South Fremantle", "South Guildford", "South Lake", "South Perth", "Southern River", "St James", "Stirling", "Subiaco",
+  "Success", "Swan View", "Swanbourne", "Thornlie", "Victoria Park", "Wangara", "Wanneroo", "Warwick", "Wattle Grove",
+  "Welshpool", "Wembley", "Wembley Downs", "West Leederville", "West Perth", "West Swan", "Westfield", "Westminster",
+  "Willetton", "Wilson", "Yokine"
+];
