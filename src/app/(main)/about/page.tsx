@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
 import { Leaf, CheckCircle2, Trophy, Clock, BadgeCheck } from "lucide-react";
+import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 
 export default function AboutPage() {
   return (
@@ -69,6 +70,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <FeaturesBanner />
 
       <section className="py-24 bg-brand-dark text-white text-center">
         <div className="container mx-auto px-6 max-w-4xl">

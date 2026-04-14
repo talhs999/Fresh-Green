@@ -9,6 +9,7 @@ import { GoogleReviews } from "@/components/sections/GoogleReviews";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { HeroSlider } from "@/components/sections/HeroSlider";
 import { SuburbsSection } from "@/components/sections/SuburbsSection";
+import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 
 export default function Home() {
   return (
@@ -119,6 +120,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Features Banner */}
+      <FeaturesBanner />
 
       {/* About Preview */}
       <section className="py-24 md:py-32 bg-brand-dark text-white relative overflow-hidden">
