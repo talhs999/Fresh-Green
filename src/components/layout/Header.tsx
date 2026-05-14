@@ -50,7 +50,7 @@ export default function Header() {
               alt="Fresh Green Gardening Logo" 
               width={300} 
               height={120} 
-              className="w-[100px] md:w-[130px] h-auto object-contain group-hover:scale-[1.05] transition-transform" 
+              className="w-[100px] md:w-[115px] h-auto object-contain -mt-1 md:-mt-2 group-hover:scale-[1.05] transition-transform" 
             />
           </Link>
 
