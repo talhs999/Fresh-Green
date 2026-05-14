@@ -27,7 +27,7 @@ export function HeroSlider() {
           src={img}
           alt={`Landscaping Perth - Image ${i + 1}`}
           fill
-          className={`object-cover object-center transition-opacity duration-[2000ms] ease-in-out ${i === index ? "opacity-100" : "opacity-0"}`}
+          className={`object-cover object-[70%_center] md:object-center transition-opacity duration-[2000ms] ease-in-out ${i === index ? "opacity-100" : "opacity-0"}`}
           priority={i === 0}
         />
       ))}

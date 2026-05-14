@@ -19,10 +19,10 @@ export default function Home() {
         {/* Background Image Slider */}
         <HeroSlider />
 
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-20 pb-40">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-32 md:pt-20 pb-20 md:pb-40">
+          <div className="grid lg:grid-cols-12 gap-6 md:gap-12 items-center">
             <div className="lg:col-span-7 max-w-2xl">
-              <AnimatedSection direction="up" delay={0.1}>
+              <AnimatedSection direction="up" delay={0.1} className="hidden lg:block">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/10 border border-brand-accent/20 backdrop-blur-md mb-8">
                   <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
                   <span className="text-brand-accent font-medium text-sm tracking-wide uppercase">Premium Landscaping in Perth</span>
@@ -30,14 +30,16 @@ export default function Home() {
               </AnimatedSection>
               
               <AnimatedSection direction="up" delay={0.3}>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-tight mb-6">
-                  Design. Construct. <br />
-                  <span className="text-brand-accent">Maintain.</span>
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-2 md:mb-6 drop-shadow-lg text-center md:text-left">
+                  <span className="uppercase tracking-widest text-2xl md:text-4xl block md:inline">Make Your</span>{" "}
+                  <span className="font-serif italic text-brand-accent capitalize text-6xl sm:text-7xl md:text-8xl px-2">Garden</span>{" "}
+                  <span className="uppercase tracking-widest text-2xl md:text-4xl">come</span>{" "}
+                  <span className="font-serif italic text-brand-accent lowercase text-6xl sm:text-7xl md:text-8xl">alive!</span>
                 </h1>
               </AnimatedSection>
 
               <AnimatedSection direction="up" delay={0.5}>
-                <p className="text-xl md:text-2xl text-brand-text-light/90 mb-6 lg:mb-10 max-w-2xl leading-relaxed">
+                <p className="hidden md:block text-xl md:text-2xl text-brand-text-light/90 mb-6 lg:mb-10 max-w-2xl leading-relaxed">
                   Transform your outdoor space with Perth's leading gardening and landscaping experts. We create environments you'll love spending time in.
                 </p>
               </AnimatedSection>
@@ -52,16 +54,16 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="lg:col-span-5 mt-2 lg:mt-0">
+            <div className="lg:col-span-5 mt-4 lg:mt-0 w-full max-w-md mx-auto lg:max-w-none">
               <AnimatedSection direction="left" delay={0.5}>
                 <HeroContactForm />
               </AnimatedSection>
 
-              <AnimatedSection direction="up" delay={0.7} className="flex lg:hidden flex-col sm:flex-row gap-4 mt-10">
-                <Button size="lg" asChild>
+              <AnimatedSection direction="up" delay={0.7} className="flex lg:hidden flex-col sm:flex-row gap-3 mt-6">
+                <Button size="lg" asChild className="w-full">
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10" asChild>
+                <Button size="lg" variant="outline" className="w-full text-white border-white/20 hover:bg-white/10" asChild>
                   <Link href="tel:0408086923">Call 0408 086 923</Link>
                 </Button>
               </AnimatedSection>
