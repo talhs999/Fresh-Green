@@ -34,7 +34,7 @@ export default function Home() {
                   <span className="uppercase tracking-widest text-lg md:text-4xl block md:inline">Make Your</span>{" "}
                   <span className="font-serif italic text-brand-accent capitalize text-5xl sm:text-7xl md:text-8xl px-1">Garden</span>{" "}
                   <span className="uppercase tracking-widest text-lg md:text-4xl">come</span>{" "}
-                  <span className="font-serif italic text-brand-accent lowercase text-5xl sm:text-7xl md:text-8xl">alive!</span>
+                  <span className="font-serif italic text-brand-accent text-5xl sm:text-7xl md:text-8xl">Alive!</span>
                 </h1>
               </AnimatedSection>
 
@@ -45,7 +45,7 @@ export default function Home() {
               </AnimatedSection>
 
               <AnimatedSection direction="up" delay={0.7} className="hidden lg:flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
+                <Button size="lg" className="bg-brand-primary text-white hover:bg-brand-primary-light shadow-lg" asChild>
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10" asChild>

@@ -64,7 +64,7 @@ export function HeroContactForm() {
 
   return (
     <div className="bg-[#F2FAF1]/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 border-t border-l border-brand-dark/10 shadow-2xl shadow-black/20">
-      <h3 className="text-2xl font-display font-bold text-brand-dark mb-6 text-center tracking-wide">GET A FREE QUOTE</h3>
+      <h3 className="text-2xl font-display font-bold text-brand-primary mb-6 text-center tracking-wide">GET A FREE QUOTE</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -101,7 +101,7 @@ export function HeroContactForm() {
           </div>
         )}
 
-        <Button type="submit" className="w-full bg-brand-accent text-brand-dark hover:bg-brand-accent/90" disabled={isSubmitting}>
+        <Button type="submit" className="w-full bg-brand-primary text-white hover:bg-brand-primary-light shadow-lg" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Submit Request"}
         </Button>
       </form>
