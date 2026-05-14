@@ -44,36 +44,35 @@ export default function Header() {
               : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl px-6 py-4"
           )}
         >
-          <Link href="/" className="flex items-center group shrink-0 pl-4 md:pl-6">
-            <Image 
-              src={headerLogo} 
-              alt="Fresh Green Gardening Logo" 
-              width={300} 
-              height={120} 
-              className="w-[100px] md:w-[115px] h-auto object-contain -mt-1 md:-mt-2 group-hover:scale-[1.05] transition-transform" 
-            />
-          </Link>
+          <div className="flex-1 flex justify-start">
+            <Link href="/" className="flex items-center group shrink-0 pl-4 md:pl-6">
+              <Image 
+                src={headerLogo} 
+                alt="Fresh Green Gardening Logo" 
+                width={300} 
+                height={120} 
+                className="w-[100px] md:w-[115px] h-auto object-contain -mt-1 md:-mt-2 group-hover:scale-[1.05] transition-transform" 
+              />
+            </Link>
+          </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex flex-1 justify-center items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider"
+                className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider whitespace-nowrap"
               >
                 {link.name}
               </Link>
             ))}
           </nav>
 
-
-
-          {/* Mobile Actions */}
-          <div className="flex md:hidden items-center gap-4">
-
+          {/* Right side placeholder / Mobile Actions */}
+          <div className="flex-1 flex justify-end items-center gap-4 pr-4 md:pr-6">
             <button
-              className="text-brand-dark hover:text-brand-primary transition-colors"
+              className="text-brand-dark hover:text-brand-primary transition-colors md:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -94,7 +93,7 @@ export default function Header() {
             key={link.name}
             href={link.href}
             onClick={() => setMobileMenuOpen(false)}
-            className="text-brand-dark hover:text-brand-primary text-lg font-bold font-display transition-colors py-2 border-b border-brand-dark/5"
+            className="text-brand-dark hover:text-brand-primary text-lg font-bold font-display transition-colors py-2 border-b border-brand-dark/5 text-center"
           >
             {link.name}
           </Link>

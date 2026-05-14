@@ -66,7 +66,8 @@ export default function ContactPage() {
       </section>
 
       <section className="py-24 bg-brand-offwhite">
-        <div className="container mx-auto px-6 max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-5 gap-16">
             <div className="lg:col-span-2 space-y-12">
               <AnimatedSection direction="right">
@@ -174,7 +175,8 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Suburbs We Serve - Categorized Variant */}
       <SuburbsSection variant="categorized" />
