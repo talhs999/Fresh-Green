@@ -5,6 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import newLogo from "../../../new-Logo.png";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,7 +46,7 @@ export default function Header() {
         >
           <Link href="/" className="flex items-center gap-3 group shrink-0">
             <Image 
-              src="/new-Logo.png" 
+              src={newLogo} 
               alt="Fresh Green Gardening Logo" 
               width={200} 
               height={80} 
