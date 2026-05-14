@@ -63,27 +63,27 @@ export function HeroContactForm() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-brand-primary/95 to-brand-dark/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 border-t border-l border-white/20 shadow-2xl shadow-black/50">
-      <h3 className="text-2xl font-display font-bold text-white mb-6 text-center">Get a Free Quote</h3>
+    <div className="bg-[#F2FAF1]/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 border-t border-l border-brand-dark/10 shadow-2xl shadow-black/20">
+      <h3 className="text-2xl font-display font-bold text-brand-dark mb-6 text-center tracking-wide">GET A FREE QUOTE</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <input required id="hero-name" name="name" type="text" className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm" placeholder="Your Name *" />
+            <input required id="hero-name" name="name" type="text" className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark placeholder:text-brand-dark/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm shadow-sm" placeholder="Your Name *" />
           </div>
           <div>
-            <input required id="hero-email" name="email" type="email" className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm" placeholder="Your Email *" />
+            <input required id="hero-email" name="email" type="email" className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark placeholder:text-brand-dark/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm shadow-sm" placeholder="Your Email *" />
           </div>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <input required id="hero-phone" name="phone" type="tel" className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm" placeholder="Phone *" />
+            <input required id="hero-phone" name="phone" type="tel" className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark placeholder:text-brand-dark/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm shadow-sm" placeholder="Phone *" />
           </div>
           <div>
-            <input required id="hero-suburb" name="suburb" type="text" className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm" placeholder="Suburb *" />
+            <input required id="hero-suburb" name="suburb" type="text" className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark placeholder:text-brand-dark/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm shadow-sm" placeholder="Suburb *" />
           </div>
         </div>
         <div>
-          <select required id="hero-service" name="service" className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm appearance-none">
+          <select required id="hero-service" name="service" className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark focus:ring-2 focus:ring-brand-accent outline-none transition-all text-sm appearance-none shadow-sm">
             <option value="" className="text-brand-dark">Select a service... *</option>
             {servicesData.map((s) => (
               <option key={s.id} value={s.id} className="text-brand-dark">{s.title}</option>
@@ -92,7 +92,7 @@ export function HeroContactForm() {
           </select>
         </div>
         <div>
-          <textarea id="hero-message" name="message" rows={2} className="w-full bg-white/5 px-4 py-3 rounded-xl border border-white/10 text-white placeholder:text-white/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all resize-none text-sm" placeholder="Your Message (Optional)" />
+          <textarea id="hero-message" name="message" rows={2} className="w-full bg-white px-4 py-3 rounded-xl border border-brand-dark/20 text-brand-dark placeholder:text-brand-dark/50 focus:ring-2 focus:ring-brand-accent outline-none transition-all resize-none text-sm shadow-sm" placeholder="Your Message (Optional)" />
         </div>
         
         {error && (
