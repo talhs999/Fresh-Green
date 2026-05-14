@@ -37,7 +37,7 @@ export default function Home() {
               </AnimatedSection>
 
               <AnimatedSection direction="up" delay={0.5}>
-                <p className="text-xl md:text-2xl text-brand-text-light/90 mb-10 max-w-2xl leading-relaxed">
+                <p className="text-xl md:text-2xl text-brand-text-light/90 mb-6 lg:mb-10 max-w-2xl leading-relaxed">
                   Transform your outdoor space with Perth's leading gardening and landscaping experts. We create environments you'll love spending time in.
                 </p>
               </AnimatedSection>
@@ -52,7 +52,7 @@ export default function Home() {
               </AnimatedSection>
             </div>
 
-            <div className="lg:col-span-5 mt-12 lg:mt-0">
+            <div className="lg:col-span-5 mt-2 lg:mt-0">
               <AnimatedSection direction="left" delay={0.5}>
                 <HeroContactForm />
               </AnimatedSection>
