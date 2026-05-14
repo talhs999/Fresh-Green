@@ -40,8 +40,8 @@ export default function Header() {
           className={cn(
             "flex items-center justify-between mx-auto max-w-7xl rounded-full transition-colors duration-300",
             isScrolled
-              ? "bg-brand-offwhite/95 backdrop-blur-md shadow-lg shadow-brand-dark/10 border border-brand-dark/10 px-6 py-3"
-              : "bg-brand-offwhite/95 backdrop-blur-sm shadow-xl shadow-brand-dark/5 px-6 py-4"
+              ? "bg-[#F2FAF1]/95 backdrop-blur-md shadow-lg shadow-brand-dark/10 border border-brand-dark/10 px-6 py-3"
+              : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl shadow-brand-dark/5 px-6 py-4"
           )}
         >
           <Link href="/" className="flex items-center group shrink-0">
@@ -97,7 +97,7 @@ export default function Header() {
       {/* Mobile Nav */}
       <div
         className={cn(
-          "md:hidden absolute top-full left-4 right-4 mt-2 bg-brand-offwhite/95 backdrop-blur-md border border-brand-dark/10 rounded-3xl p-6 shadow-2xl flex flex-col gap-4 transform transition-all duration-300 origin-top",
+          "md:hidden absolute top-full left-4 right-4 mt-2 bg-[#F2FAF1]/95 backdrop-blur-md border border-brand-dark/10 rounded-3xl p-6 shadow-2xl flex flex-col gap-4 transform transition-all duration-300 origin-top",
           mobileMenuOpen ? "scale-y-100 opacity-100 visible" : "scale-y-95 opacity-0 invisible"
         )}
       >
