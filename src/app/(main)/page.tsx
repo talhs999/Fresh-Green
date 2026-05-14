@@ -55,9 +55,7 @@ export default function Home() {
             </div>
 
             <div className="lg:col-span-5 mt-4 lg:mt-0 w-full max-w-md mx-auto lg:max-w-none">
-              <AnimatedSection direction="left" delay={0.5}>
-                <HeroContactForm />
-              </AnimatedSection>
+              <HeroContactForm />
 
               <AnimatedSection direction="up" delay={0.7} className="flex lg:hidden flex-col sm:flex-row gap-3 mt-6">
                 <Button size="lg" asChild className="w-full">
