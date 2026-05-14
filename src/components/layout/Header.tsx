@@ -45,7 +45,7 @@ export default function Header() {
         >
           <Link href="/" className="flex items-center gap-3 group shrink-0">
             <Image 
-              src="/logo.png" 
+              src="/new-Logo.png" 
               alt="Fresh Green Gardening Logo" 
               width={200} 
               height={80} 

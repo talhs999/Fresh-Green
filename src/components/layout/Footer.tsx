@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-3 mb-2 shrink-0 max-w-fit">
               <div className="bg-white/10 rounded-2xl p-4 shrink-0 hover:bg-brand-accent/20 transition-colors">
-                 <Image src="/logo.png" alt="Fresh Green Gardening Logo" width={300} height={150} className="w-auto h-20 object-contain brightness-0 invert" />
+                 <Image src="/new-Logo.png" alt="Fresh Green Gardening Logo" width={300} height={150} className="w-auto h-20 object-contain brightness-0 invert" />
               </div>
             </Link>
             <p className="text-sm leading-relaxed text-brand-text-light/80">
