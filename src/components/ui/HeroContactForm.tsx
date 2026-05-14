@@ -64,7 +64,7 @@ export function HeroContactForm() {
 
   return (
     <div className="bg-brand-dark/40 backdrop-blur-xl rounded-3xl p-6 md:p-8 border border-white/10 shadow-2xl">
-      <h3 className="text-2xl font-display font-bold text-white mb-6">Get a Free Quote</h3>
+      <h3 className="text-2xl font-display font-bold text-white mb-6 text-center">Get a Free Quote</h3>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="grid grid-cols-2 gap-4">
           <div>
