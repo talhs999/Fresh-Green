@@ -19,7 +19,7 @@ export default function Home() {
         {/* Background Image Slider */}
         <HeroSlider />
 
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-32 md:pt-20 pb-20 md:pb-40">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-28 md:pt-20 pb-12 md:pb-40">
           <div className="grid lg:grid-cols-12 gap-6 md:gap-12 items-center">
             <div className="lg:col-span-7 max-w-2xl">
               <AnimatedSection direction="up" delay={0.1} className="hidden lg:block">
@@ -30,11 +30,11 @@ export default function Home() {
               </AnimatedSection>
               
               <AnimatedSection direction="up" delay={0.3}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-2 md:mb-6 drop-shadow-lg text-center md:text-left">
-                  <span className="uppercase tracking-widest text-2xl md:text-4xl block md:inline">Make Your</span>{" "}
-                  <span className="font-serif italic text-brand-accent capitalize text-6xl sm:text-7xl md:text-8xl px-2">Garden</span>{" "}
-                  <span className="uppercase tracking-widest text-2xl md:text-4xl">come</span>{" "}
-                  <span className="font-serif italic text-brand-accent lowercase text-6xl sm:text-7xl md:text-8xl">alive!</span>
+                <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-2 md:mb-6 drop-shadow-lg text-center md:text-left mt-2">
+                  <span className="uppercase tracking-widest text-lg md:text-4xl block md:inline">Make Your</span>{" "}
+                  <span className="font-serif italic text-brand-accent capitalize text-5xl sm:text-7xl md:text-8xl px-1">Garden</span>{" "}
+                  <span className="uppercase tracking-widest text-lg md:text-4xl">come</span>{" "}
+                  <span className="font-serif italic text-brand-accent lowercase text-5xl sm:text-7xl md:text-8xl">alive!</span>
                 </h1>
               </AnimatedSection>
 

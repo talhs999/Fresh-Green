@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/hero.png",
-  "/images/services/lawn-maintenance.png",
-  "/images/services/planting.png",
-  "/images/services/small-landscaping.png",
+  "/images/services/seasonal-cleanup.png",
+  "/images/services/pruning-hedges-shrubs.png",
+  "/images/services/yard-waste.png",
+  "/images/services/tree-trimming.png",
 ];
 
 export function HeroSlider() {
@@ -27,7 +27,7 @@ export function HeroSlider() {
           src={img}
           alt={`Landscaping Perth - Image ${i + 1}`}
           fill
-          className={`object-cover object-[70%_center] md:object-center transition-opacity duration-[2000ms] ease-in-out ${i === index ? "opacity-100" : "opacity-0"}`}
+          className={`object-cover object-center transition-opacity duration-[2000ms] ease-in-out ${i === index ? "opacity-100" : "opacity-0"}`}
           priority={i === 0}
         />
       ))}
