@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Col */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center shrink-0 max-w-fit mb-2">
-              <Image src={footerLogo} alt="Fresh Green Gardening Logo" width={240} height={100} className="w-auto h-16 object-contain" />
+            <Link href="/" className="flex items-center shrink-0 max-w-fit mb-4">
+              <Image src={footerLogo} alt="Fresh Green Gardening Logo" width={400} height={150} className="w-48 md:w-64 h-auto object-contain scale-[1.5] origin-left" />
             </Link>
             <p className="text-sm leading-relaxed text-brand-text-light/80">
               Professional gardening and landscaping services in Perth. We pride ourselves on creating and maintaining beautiful, natural environments that enhance any property.
