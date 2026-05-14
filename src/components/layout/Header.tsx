@@ -44,7 +44,7 @@ export default function Header() {
               : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl px-6 py-4"
           )}
         >
-          <Link href="/" className="flex items-center group shrink-0">
+          <Link href="/" className="flex items-center group shrink-0 pl-4 md:pl-6">
             <Image 
               src={headerLogo} 
               alt="Fresh Green Gardening Logo" 
@@ -67,23 +67,11 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden md:flex">
-            <Link
-              href="/contact"
-              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg"
-            >
-              Get a Quote
-            </Link>
-          </div>
+
 
           {/* Mobile Actions */}
           <div className="flex md:hidden items-center gap-4">
-            <Link
-              href="/contact"
-              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap shadow-lg"
-            >
-              Get a Quote
-            </Link>
+
             <button
               className="text-brand-dark hover:text-brand-primary transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -111,13 +99,7 @@ export default function Header() {
             {link.name}
           </Link>
         ))}
-        <Link
-          href="/contact"
-          onClick={() => setMobileMenuOpen(false)}
-          className="mt-4 bg-brand-primary text-white hover:bg-brand-primary-light font-bold text-center py-3 rounded-full"
-        >
-          Get a Quote
-        </Link>
+
       </div>
     </header>
   );

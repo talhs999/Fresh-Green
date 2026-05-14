@@ -45,7 +45,7 @@ export default function Home() {
               </AnimatedSection>
 
               <AnimatedSection direction="up" delay={0.7} className="hidden lg:flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-brand-primary text-white hover:bg-brand-primary-light shadow-lg" asChild>
+                <Button size="lg" className="bg-brand-dark text-white hover:bg-brand-primary shadow-lg border border-white/10" asChild>
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10" asChild>
@@ -58,7 +58,7 @@ export default function Home() {
               <HeroContactForm />
 
               <AnimatedSection direction="up" delay={0.7} className="flex lg:hidden flex-col sm:flex-row gap-3 mt-6">
-                <Button size="lg" asChild className="w-full">
+                <Button size="lg" asChild className="w-full bg-brand-dark text-white hover:bg-brand-primary border border-white/10">
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="w-full text-white border-white/20 hover:bg-white/10" asChild>

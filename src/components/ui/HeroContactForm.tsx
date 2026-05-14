@@ -101,7 +101,7 @@ export function HeroContactForm() {
           </div>
         )}
 
-        <Button type="submit" className="w-full bg-brand-primary text-white hover:bg-brand-primary-light shadow-lg" disabled={isSubmitting}>
+        <Button type="submit" className="w-full bg-brand-dark text-white hover:bg-brand-primary shadow-lg border border-white/5" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Submit Request"}
         </Button>
       </form>
