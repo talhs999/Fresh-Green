@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="space-y-6">
             <Link href="/" className="inline-block shrink-0 max-w-fit mb-4">
-              <Image src={footerLogo} alt="Fresh Green Gardening Logo" width={300} height={120} className="w-[140px] md:w-[180px] h-auto object-contain" />
+              <Image src={footerLogo} alt="Fresh Green Gardening Logo" width={300} height={120} className="w-[120px] md:w-[150px] h-auto object-contain" />
             </Link>
             <p className="text-sm leading-relaxed text-brand-text-light/80">
               Professional gardening and landscaping services in Perth. We pride ourselves on creating and maintaining beautiful, natural environments that enhance any property.
