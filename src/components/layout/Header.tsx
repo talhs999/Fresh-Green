@@ -40,8 +40,8 @@ export default function Header() {
           className={cn(
             "flex items-center justify-between mx-auto max-w-7xl rounded-full transition-colors duration-300",
             isScrolled
-              ? "bg-gradient-to-r from-[#F2FAF1]/95 via-brand-primary/95 to-brand-dark/95 backdrop-blur-md shadow-lg border-b border-brand-dark/10 px-6 py-3"
-              : "bg-gradient-to-r from-[#F2FAF1]/95 via-brand-primary/90 to-brand-dark/90 backdrop-blur-sm shadow-xl px-6 py-4"
+              ? "bg-[#F2FAF1]/95 backdrop-blur-md shadow-lg border-b border-brand-dark/10 px-6 py-3"
+              : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl px-6 py-4"
           )}
         >
           <Link href="/" className="flex items-center group shrink-0">
@@ -60,7 +60,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-white hover:text-brand-accent transition-colors font-bold text-sm uppercase tracking-wider drop-shadow-md"
+                className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider"
               >
                 {link.name}
               </Link>
@@ -70,7 +70,7 @@ export default function Header() {
           <div className="hidden md:flex">
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg"
+              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95 shadow-lg"
             >
               Get a Quote
             </Link>
@@ -80,12 +80,12 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-4">
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap shadow-lg"
+              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap shadow-lg"
             >
               Get a Quote
             </Link>
             <button
-              className="text-white hover:text-brand-accent transition-colors drop-shadow-md"
+              className="text-brand-dark hover:text-brand-primary transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
