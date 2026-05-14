@@ -44,13 +44,13 @@ export default function Header() {
               : "bg-brand-dark px-6 py-4"
           )}
         >
-          <Link href="/" className="flex items-center gap-3 group shrink-0">
+          <Link href="/" className="flex items-center group shrink-0">
             <Image 
               src={headerLogo} 
               alt="Fresh Green Gardening Logo" 
-              width={250} 
-              height={80} 
-              className="w-28 md:w-36 h-auto object-contain origin-left group-hover:scale-[1.05] transition-transform" 
+              width={300} 
+              height={120} 
+              className="w-[120px] md:w-[160px] h-auto object-contain group-hover:scale-[1.05] transition-transform" 
             />
           </Link>
 
