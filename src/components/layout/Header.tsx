@@ -40,8 +40,8 @@ export default function Header() {
           className={cn(
             "flex items-center justify-between mx-auto max-w-7xl rounded-full transition-colors duration-300",
             isScrolled
-              ? "bg-brand-dark/95 backdrop-blur-md shadow-lg shadow-black/20 border border-white/10 px-6 py-3"
-              : "bg-brand-dark px-6 py-4"
+              ? "bg-white/95 backdrop-blur-md shadow-lg shadow-black/10 border border-brand-dark/10 px-6 py-3"
+              : "bg-white/95 backdrop-blur-sm shadow-xl shadow-black/5 px-6 py-4"
           )}
         >
           <Link href="/" className="flex items-center group shrink-0">
@@ -60,7 +60,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-brand-text-light hover:text-brand-accent transition-colors font-medium text-sm uppercase tracking-wider"
+                className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider"
               >
                 {link.name}
               </Link>
@@ -70,7 +70,7 @@ export default function Header() {
           <div className="hidden md:flex">
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95"
+              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-6 py-2.5 rounded-full transition-all hover:scale-105 active:scale-95"
             >
               Get a Quote
             </Link>
@@ -80,12 +80,12 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-4">
             <Link
               href="/contact"
-              className="bg-brand-accent hover:bg-brand-accent-glow text-brand-dark font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap"
+              className="bg-brand-primary hover:bg-brand-primary-light text-white font-bold px-4 py-1.5 text-sm rounded-full transition-transform active:scale-95 whitespace-nowrap"
             >
               Get a Quote
             </Link>
             <button
-              className="text-white hover:text-brand-accent transition-colors"
+              className="text-brand-dark hover:text-brand-primary transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -97,7 +97,7 @@ export default function Header() {
       {/* Mobile Nav */}
       <div
         className={cn(
-          "md:hidden absolute top-full left-4 right-4 mt-2 bg-brand-dark/95 backdrop-blur-md border border-white/10 rounded-3xl p-6 shadow-xl flex flex-col gap-4 transform transition-all duration-300 origin-top",
+          "md:hidden absolute top-full left-4 right-4 mt-2 bg-white/95 backdrop-blur-md border border-brand-dark/10 rounded-3xl p-6 shadow-2xl flex flex-col gap-4 transform transition-all duration-300 origin-top",
           mobileMenuOpen ? "scale-y-100 opacity-100 visible" : "scale-y-95 opacity-0 invisible"
         )}
       >
@@ -106,7 +106,7 @@ export default function Header() {
             key={link.name}
             href={link.href}
             onClick={() => setMobileMenuOpen(false)}
-            className="text-white hover:text-brand-accent text-lg font-display transition-colors py-2 border-b border-white/5"
+            className="text-brand-dark hover:text-brand-primary text-lg font-bold font-display transition-colors py-2 border-b border-brand-dark/5"
           >
             {link.name}
           </Link>
@@ -114,7 +114,7 @@ export default function Header() {
         <Link
           href="/contact"
           onClick={() => setMobileMenuOpen(false)}
-          className="mt-4 bg-brand-accent text-brand-dark font-bold text-center py-3 rounded-full"
+          className="mt-4 bg-brand-primary text-white hover:bg-brand-primary-light font-bold text-center py-3 rounded-full"
         >
           Get a Quote
         </Link>
