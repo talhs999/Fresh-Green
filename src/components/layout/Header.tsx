@@ -48,9 +48,9 @@ export default function Header() {
             <Image 
               src={headerLogo} 
               alt="Fresh Green Gardening Logo" 
-              width={400} 
-              height={150} 
-              className="w-40 md:w-56 h-auto object-contain scale-[1.5] origin-left group-hover:scale-[1.6] transition-transform" 
+              width={300} 
+              height={100} 
+              className="w-32 md:w-44 h-auto object-contain origin-left group-hover:scale-[1.05] transition-transform" 
             />
           </Link>
 
