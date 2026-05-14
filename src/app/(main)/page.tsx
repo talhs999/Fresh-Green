@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Stats Bar */}
-      <section className="relative z-20 -mt-24 container mx-auto px-6 max-w-7xl">
+      <section className="relative z-20 mt-8 md:-mt-24 container mx-auto px-6 max-w-7xl">
         <AnimatedSection direction="up">
           <div className="bg-brand-surface border border-white/5 shadow-2xl rounded-3xl p-8 md:p-12 overflow-hidden relative backdrop-blur-xl">
             {/* Subtle glow effect */}
