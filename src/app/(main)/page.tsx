@@ -42,7 +42,7 @@ export default function Home() {
                 </p>
               </AnimatedSection>
 
-              <AnimatedSection direction="up" delay={0.7} className="flex flex-col sm:flex-row gap-4">
+              <AnimatedSection direction="up" delay={0.7} className="hidden lg:flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <Link href="/services">Explore Our Services</Link>
                 </Button>
@@ -55,6 +55,15 @@ export default function Home() {
             <div className="lg:col-span-5 mt-12 lg:mt-0">
               <AnimatedSection direction="left" delay={0.5}>
                 <HeroContactForm />
+              </AnimatedSection>
+
+              <AnimatedSection direction="up" delay={0.7} className="flex lg:hidden flex-col sm:flex-row gap-4 mt-10">
+                <Button size="lg" asChild>
+                  <Link href="/services">Explore Our Services</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10" asChild>
+                  <Link href="tel:0408086923">Call 0408 086 923</Link>
+                </Button>
               </AnimatedSection>
             </div>
           </div>
