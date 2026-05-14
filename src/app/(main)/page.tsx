@@ -10,6 +10,7 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import { HeroSlider } from "@/components/sections/HeroSlider";
 import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
+import { HeroContactForm } from "@/components/ui/HeroContactForm";
 
 export default function Home() {
   return (
@@ -19,35 +20,43 @@ export default function Home() {
         <HeroSlider />
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-20 pb-40">
-          <div className="max-w-4xl">
-            <AnimatedSection direction="up" delay={0.1}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/10 border border-brand-accent/20 backdrop-blur-md mb-8">
-                <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
-                <span className="text-brand-accent font-medium text-sm tracking-wide uppercase">Premum Landscaping in Perth</span>
-              </div>
-            </AnimatedSection>
-            
-            <AnimatedSection direction="up" delay={0.3}>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-tight mb-6">
-                Design. Construct. <br />
-                <span className="text-brand-accent">Maintain.</span>
-              </h1>
-            </AnimatedSection>
+          <div className="grid lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-7 max-w-2xl">
+              <AnimatedSection direction="up" delay={0.1}>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/10 border border-brand-accent/20 backdrop-blur-md mb-8">
+                  <span className="w-2 h-2 rounded-full bg-brand-accent animate-pulse" />
+                  <span className="text-brand-accent font-medium text-sm tracking-wide uppercase">Premium Landscaping in Perth</span>
+                </div>
+              </AnimatedSection>
+              
+              <AnimatedSection direction="up" delay={0.3}>
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-tight mb-6">
+                  Design. Construct. <br />
+                  <span className="text-brand-accent">Maintain.</span>
+                </h1>
+              </AnimatedSection>
 
-            <AnimatedSection direction="up" delay={0.5}>
-              <p className="text-xl md:text-2xl text-brand-text-light/90 mb-10 max-w-2xl leading-relaxed">
-                Transform your outdoor space with Perth's leading gardening and landscaping experts. We create environments you'll love spending time in.
-              </p>
-            </AnimatedSection>
+              <AnimatedSection direction="up" delay={0.5}>
+                <p className="text-xl md:text-2xl text-brand-text-light/90 mb-10 max-w-2xl leading-relaxed">
+                  Transform your outdoor space with Perth's leading gardening and landscaping experts. We create environments you'll love spending time in.
+                </p>
+              </AnimatedSection>
 
-            <AnimatedSection direction="up" delay={0.7} className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
-                <Link href="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/services">View Our Services</Link>
-              </Button>
-            </AnimatedSection>
+              <AnimatedSection direction="up" delay={0.7} className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" asChild>
+                  <Link href="/services">Explore Our Services</Link>
+                </Button>
+                <Button size="lg" variant="outline" className="text-white border-white/20 hover:bg-white/10" asChild>
+                  <Link href="tel:0408086923">Call 0408 086 923</Link>
+                </Button>
+              </AnimatedSection>
+            </div>
+
+            <div className="lg:col-span-5 mt-12 lg:mt-0">
+              <AnimatedSection direction="left" delay={0.5}>
+                <HeroContactForm />
+              </AnimatedSection>
+            </div>
           </div>
         </div>
       </section>

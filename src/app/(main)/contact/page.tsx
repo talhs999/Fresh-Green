@@ -5,7 +5,6 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
 import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { servicesData } from "@/lib/services-data";
-import { supabase } from "@/lib/supabase";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 export default function ContactPage() {
@@ -29,12 +28,15 @@ export default function ContactPage() {
     };
 
     try {
-      // Basic insert to supabase table 'contact_submissions'
-      // Note: Error will show if variables aren't set or table doesn't exist yet, which is expected before backend setup is finished by user
-      const { error } = await supabase.from("contact_submissions").insert([data]);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-      if (error) {
-        throw error;
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || "Failed to send message");
       }
 
       setIsSuccess(true);
@@ -158,7 +160,7 @@ export default function ContactPage() {
 
                       {error && (
                         <div className="p-4 bg-red-50 text-red-600 rounded-xl text-sm border border-red-100">
-                          {error} (Have you set up the Supabase credentials in .env.local yet?)
+                          {error}
                         </div>
                       )}
 
