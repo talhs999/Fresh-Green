@@ -59,17 +59,20 @@ export function ReelsSlider() {
             <ChevronLeft className="w-6 h-6" />
           </button>
 
-          {/* Reel */}
-          <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-[9/16]">
-            <iframe
-              key={activeReel.id}
-              src={`https://www.instagram.com/reel/${activeReel.id}/embed/`}
-              className="w-full h-full"
-              frameBorder="0"
-              scrolling="no"
-              allowFullScreen
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            />
+          {/* Reel Container (Cropped for "Video Only" look) */}
+          <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-[9/16] relative">
+            <div className="absolute inset-0 w-full h-[120%] -top-[10%]">
+              <iframe
+                key={activeReel.id}
+                src={`https://www.instagram.com/reel/${activeReel.id}/embed/`}
+                className="w-full h-full border-0"
+                scrolling="no"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
+            </div>
+            {/* Overlay to prevent accidental clicks on cropped UI */}
+            <div className="absolute inset-0 z-10 pointer-events-none border-[12px] border-black/20 rounded-3xl" />
           </div>
 
           {/* Next Button */}
