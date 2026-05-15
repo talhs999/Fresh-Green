@@ -73,7 +73,7 @@ export function GetQuoteBanner() {
             <AnimatedSection direction="left" className="hidden md:block relative self-end flex-shrink-0">
               <div className="relative w-[280px] lg:w-[340px] h-[320px] lg:h-[380px]">
                 <Image
-                  src="/images/worker.png"
+                  src="/images/geta quote imaeg.png"
                   alt="Fresh Green Gardening Professional"
                   fill
                   className="object-contain object-bottom drop-shadow-2xl"
