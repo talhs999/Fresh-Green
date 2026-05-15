@@ -149,8 +149,7 @@ export default function Home() {
       <FeaturesBanner />
       <VideoReels />
 
-      {/* About Preview */}
-      <section className="py-24 md:py-32 bg-brand-dark text-white relative overflow-hidden">
+      <section className="pt-12 pb-24 md:py-32 bg-brand-dark text-white relative overflow-hidden">
         <div className="absolute right-0 top-0 w-1/3 h-full bg-brand-primary-light/10 blur-[100px] pointer-events-none" />
         <div className="container mx-auto px-6 max-w-7xl relative">
           <div className="grid lg:grid-cols-2 gap-16 items-center">

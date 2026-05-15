@@ -42,7 +42,7 @@ export function VideoReels() {
   };
 
   return (
-    <section className="py-24 bg-brand-dark overflow-hidden text-white relative">
+    <section className="pt-24 pb-12 md:pb-24 bg-brand-dark overflow-hidden text-white relative">
       {/* Subtle background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(59,177,67,0.1)_0%,transparent_70%)] pointer-events-none" />
 
