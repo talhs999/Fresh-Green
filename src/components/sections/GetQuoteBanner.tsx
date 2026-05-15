@@ -6,30 +6,6 @@ import { ArrowRight, Phone } from "lucide-react";
 export function GetQuoteBanner() {
   return (
     <section className="relative bg-brand-dark overflow-hidden">
-      {/* Top Process Bar */}
-      <div className="bg-white border-b border-brand-dark/10">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-brand-dark/10">
-            {[
-              { step: "01", title: "Point of Contact" },
-              { step: "02", title: "Consultation" },
-              { step: "03", title: "Present the Plan" },
-              { step: "04", title: "Execution" },
-            ].map((item, i) => (
-              <AnimatedSection key={i} delay={i * 0.1} direction="up">
-                <div className="flex flex-col items-center justify-center py-6 md:py-8 px-4 group hover:bg-brand-offwhite transition-colors duration-300">
-                  <span className="text-xs font-bold text-brand-accent/60 tracking-widest uppercase mb-1">
-                    Step {item.step}
-                  </span>
-                  <span className="text-brand-primary font-bold text-sm md:text-base text-center leading-tight group-hover:text-brand-dark transition-colors">
-                    {item.title}
-                  </span>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* Main CTA Banner */}
       <div className="relative min-h-[280px] md:min-h-[320px] flex items-center">
