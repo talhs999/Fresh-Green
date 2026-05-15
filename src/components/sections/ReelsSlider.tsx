@@ -78,7 +78,7 @@ export function ReelsSlider() {
                 key={`${reel.id}-${i}`}
                 className="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black aspect-[9/16] relative"
               >
-                <div className="absolute inset-0 w-full h-[120%] -top-[10%]">
+                <div className="absolute inset-0 w-full h-[150%] -top-[22%]">
                   <iframe
                     src={`https://www.instagram.com/reel/${reel.id}/embed/`}
                     className="w-full h-full border-0"
