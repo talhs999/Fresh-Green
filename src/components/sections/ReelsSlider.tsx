@@ -32,6 +32,10 @@ export function ReelsSlider() {
     setCurrent((prev) => (prev + 1) % reels.length);
   };
 
+  const prev = () => {
+    setCurrent((prev) => (prev - 1 + reels.length) % reels.length);
+  };
+
   // Get visible reels (looping)
   const getVisibleReels = () => {
     return Array.from({ length: visibleCount }, (_, i) => reels[(current + i) % reels.length]);
