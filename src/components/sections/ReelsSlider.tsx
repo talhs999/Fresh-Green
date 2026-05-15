@@ -42,7 +42,7 @@ export function ReelsSlider() {
   };
 
   return (
-    <section className="py-20 md:pt-28 md:pb-12 bg-brand-dark overflow-hidden relative">
+    <section className="py-12 md:pt-16 md:pb-12 bg-brand-dark overflow-hidden relative">
       {/* Subtle background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(46,90,39,0.2)_0%,transparent_70%)] pointer-events-none" />
 
@@ -81,7 +81,7 @@ export function ReelsSlider() {
                 <div className="absolute inset-0 w-full h-full">
                   <iframe
                     src={`https://www.instagram.com/reel/${reel.id}/embed/`}
-                    className="absolute w-full h-full scale-[1.7] origin-center -translate-y-[15%] border-0"
+                    className="absolute w-full h-full scale-[2.2] origin-center -translate-y-[25%] border-0"
                     scrolling="no"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
