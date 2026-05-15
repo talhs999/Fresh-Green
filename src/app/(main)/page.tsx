@@ -12,7 +12,7 @@ import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 import { HeroContactForm } from "@/components/ui/HeroContactForm";
 import { GetQuoteBanner } from "@/components/sections/GetQuoteBanner";
-import { ReelsSlider } from "@/components/sections/ReelsSlider";
+import { VideoReels } from "@/components/sections/VideoReels";
 
 export default function Home() {
   return (
@@ -138,7 +138,7 @@ export default function Home() {
           </div>
 
           <div className="mt-20 text-center">
-            <Button size="lg" asChild className="px-12">
+            <Button size="lg" asChild className="px-12 bg-brand-dark text-white hover:bg-brand-primary border border-white/5 shadow-xl">
               <Link href="/services">View All Services</Link>
             </Button>
           </div>
@@ -147,6 +147,7 @@ export default function Home() {
 
       {/* Features Banner */}
       <FeaturesBanner />
+      <VideoReels />
 
       {/* About Preview */}
       <section className="py-24 md:py-32 bg-brand-dark text-white relative overflow-hidden">
@@ -186,7 +187,7 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="bg-brand-dark text-white hover:bg-brand-primary border border-white/10 shadow-xl">
                 <Link href="/about">Discover Our Story</Link>
               </Button>
             </AnimatedSection>
@@ -203,8 +204,7 @@ export default function Home() {
       {/* Reviews Section */}
       <GoogleReviews />
 
-      {/* Instagram Reels */}
-      <ReelsSlider />
+
 
       {/* Suburbs We Serve */}
       <SuburbsSection variant="compact" />
