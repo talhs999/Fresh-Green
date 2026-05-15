@@ -11,6 +11,7 @@ import { HeroSlider } from "@/components/sections/HeroSlider";
 import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 import { HeroContactForm } from "@/components/ui/HeroContactForm";
+import { GetQuoteBanner } from "@/components/sections/GetQuoteBanner";
 
 export default function Home() {
   return (
@@ -203,6 +204,9 @@ export default function Home() {
 
       {/* Suburbs We Serve */}
       <SuburbsSection variant="compact" />
+
+      {/* Get Quote Banner */}
+      <GetQuoteBanner />
 
       {/* CTA */}
       <section className="py-24 bg-brand-accent relative overflow-hidden">
