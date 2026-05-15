@@ -57,8 +57,8 @@ export default function Header() {
           </div>
 
           {/* Desktop Nav - Absolutely Centered */}
-          <nav className="hidden md:flex absolute inset-0 justify-center items-center pointer-events-none">
-            <div className="flex items-center gap-8 pointer-events-auto">
+          <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+            <div className="flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
