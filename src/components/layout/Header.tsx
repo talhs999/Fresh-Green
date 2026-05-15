@@ -38,14 +38,15 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div
           className={cn(
-            "relative flex items-center justify-between mx-auto max-w-7xl rounded-full transition-colors duration-300",
+            "relative flex items-center justify-between md:justify-center mx-auto max-w-7xl rounded-full transition-colors duration-300",
             isScrolled
               ? "bg-[#F2FAF1]/95 backdrop-blur-md shadow-lg border-b border-brand-dark/10 px-6 py-3"
               : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl px-6 py-4"
           )}
         >
-          <div className="z-10">
-            <Link href="/" className="flex items-center group shrink-0 pl-4 md:pl-6">
+          {/* Logo - Fixed to Left on Desktop */}
+          <div className="z-10 md:absolute md:left-8">
+            <Link href="/" className="flex items-center group shrink-0">
               <Image 
                 src={headerLogo} 
                 alt="Fresh Green Gardening Logo" 
@@ -56,23 +57,21 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Nav - Absolutely Centered */}
-          <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="flex items-center gap-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider whitespace-nowrap"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+          {/* Desktop Nav - Naturally Centered via md:justify-center on parent */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-brand-dark hover:text-brand-primary transition-colors font-bold text-sm uppercase tracking-wider whitespace-nowrap"
+              >
+                {link.name}
+              </Link>
+            ))}
           </nav>
 
-          {/* Right side / Mobile Actions */}
-          <div className="z-10 flex items-center gap-4 pr-4 md:pr-6">
+          {/* Right side / Mobile Actions - Fixed to Right on Desktop */}
+          <div className="z-10 md:absolute md:right-8 flex items-center gap-4">
             <button
               className="text-brand-dark hover:text-brand-primary transition-colors md:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
