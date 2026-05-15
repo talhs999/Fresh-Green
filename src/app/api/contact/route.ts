@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     // 1. Email to the admin (talhaxyz0@gmail.com)
     const adminMailOptions = {
       from: process.env.EMAIL_USER,
-      to: "talhaxyz0@gmail.com",
+      to: "lumamails00@gmail.com",
       subject: `New Quote Request from ${name}`,
       html: `
         <h2>New Quote Request</h2>
