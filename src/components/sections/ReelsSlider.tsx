@@ -81,7 +81,7 @@ export function ReelsSlider() {
                 <div className="absolute inset-0 w-full h-full">
                   <iframe
                     src={`https://www.instagram.com/reel/${reel.id}/embed/`}
-                    className="absolute w-full h-full scale-[2.2] origin-center -translate-y-[25%] border-0"
+                    className="absolute w-full h-[125%] -top-[12%] border-0"
                     scrolling="no"
                     allowFullScreen
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
