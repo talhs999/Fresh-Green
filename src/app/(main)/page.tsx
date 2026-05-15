@@ -12,6 +12,7 @@ import { SuburbsSection } from "@/components/sections/SuburbsSection";
 import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 import { HeroContactForm } from "@/components/ui/HeroContactForm";
 import { GetQuoteBanner } from "@/components/sections/GetQuoteBanner";
+import { ReelsSlider } from "@/components/sections/ReelsSlider";
 
 export default function Home() {
   return (
@@ -201,6 +202,9 @@ export default function Home() {
 
       {/* Reviews Section */}
       <GoogleReviews />
+
+      {/* Instagram Reels */}
+      <ReelsSlider />
 
       {/* Suburbs We Serve */}
       <SuburbsSection variant="compact" />
