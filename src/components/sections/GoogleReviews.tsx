@@ -43,7 +43,7 @@ export function GoogleReviews() {
   };
 
   return (
-    <section className="py-24 bg-brand-offwhite relative overflow-hidden">
+    <section className="pt-12 pb-24 bg-brand-offwhite relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl mb-12 flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <AnimatedSection direction="up">

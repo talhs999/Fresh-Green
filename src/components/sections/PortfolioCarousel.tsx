@@ -41,7 +41,7 @@ export function PortfolioCarousel() {
   };
 
   return (
-    <section className="py-24 bg-brand-dark overflow-hidden text-white relative">
+    <section className="pt-24 pb-12 bg-brand-dark overflow-hidden text-white relative">
       <div className="container mx-auto px-6 max-w-7xl mb-12 flex justify-between items-end">
         <AnimatedSection direction="up" className="max-w-2xl">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Recent Work</h2>
