@@ -4,6 +4,9 @@ import { Leaf } from "lucide-react";
 
 export default function GalleryPage() {
   const portfolioImages = [
+    { src: "/images/gallery/galler-1.jpeg", alt: "Premium Landscaping Project", span: "md:col-span-1 md:row-span-1" },
+    { src: "/images/gallery/gallery-2.jpeg", alt: "Custom Garden Design", span: "md:col-span-1 md:row-span-2" },
+    { src: "/images/gallery/gallery-3.jpeg", alt: "Lush Green Maintenance", span: "md:col-span-1 md:row-span-1" },
     { src: "/images/hero.png", alt: "Beautiful landscaped garden", span: "md:col-span-2 md:row-span-2" },
     { src: "/images/services/lawn-maintenance.png", alt: "Perfectly manicured lawn", span: "md:col-span-1 md:row-span-1" },
     { src: "/images/services/planting.png", alt: "Vibrant flower beds", span: "md:col-span-1 md:row-span-1" },

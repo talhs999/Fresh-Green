@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/services/seasonal-cleanup.png",
-  "/images/services/pruning-hedges-shrubs.png",
-  "/images/services/yard-waste.png",
-  "/images/services/tree-trimming.png",
+  "/images/banner/banner-1.jpeg",
+  "/images/banner/banner-2.jpeg",
+  "/images/banner/banner-3.jpeg",
+  "/images/banner/banner-4.jpeg",
 ];
 
 export function HeroSlider() {
