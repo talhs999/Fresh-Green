@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Button } from "@/components/ui/Button";
-import { Leaf, CheckCircle2, Trophy, Clock, BadgeCheck } from "lucide-react";
+import { CheckCircle2, Trophy, Clock, BadgeCheck } from "lucide-react";
 import { FeaturesBanner } from "@/components/sections/FeaturesBanner";
 
 export default function AboutPage() {
@@ -25,12 +26,19 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
              <AnimatedSection direction="right">
-              <div className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden bg-brand-primary flex items-center justify-center shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary to-brand-accent/20" />
-                <Leaf className="w-32 h-32 text-brand-accent/20 absolute transform rotate-12" />
-                <div className="relative z-10 text-center text-white">
-                  <h3 className="text-4xl font-display font-bold text-brand-accent mb-2">Since 2008</h3>
-                  <p className="text-lg">Creating Perth's Best Gardens</p>
+              <div className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-black/5 group">
+                <Image
+                  src="/images/abouimage.png"
+                  alt="Fresh Green Gardening Team at Work"
+                  fill
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                />
+                {/* Subtle overlay gradient for style */}
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/40 via-transparent to-transparent" />
+                {/* Badge */}
+                <div className="absolute bottom-6 left-6 bg-brand-dark/80 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10">
+                  <p className="text-brand-accent font-display font-bold text-2xl">15+ Years</p>
+                  <p className="text-white/80 text-sm">Experience in Perth</p>
                 </div>
               </div>
             </AnimatedSection>

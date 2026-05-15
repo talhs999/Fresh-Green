@@ -1,16 +1,16 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
 const reels = [
+  { id: "DKeVMexsG3e" },
   { id: "DPoFneFj3RY" },
   { id: "DQJcyvSDtz8" },
   { id: "DQWN3bWCs_o" },
   { id: "DPTeXNtDhRY" },
-  { id: "DKeVMexsG3e" },
 ];
 
 const VISIBLE = 3; // visible on desktop
@@ -28,19 +28,9 @@ export function ReelsSlider() {
 
   const visibleCount = isMobile ? 1 : VISIBLE;
 
-  const next = useCallback(() => {
+  const next = () => {
     setCurrent((prev) => (prev + 1) % reels.length);
-  }, []);
-
-  const prev = () => {
-    setCurrent((prev) => (prev - 1 + reels.length) % reels.length);
   };
-
-  // Auto-advance
-  useEffect(() => {
-    const timer = setInterval(next, 6000);
-    return () => clearInterval(timer);
-  }, [next]);
 
   // Get visible reels (looping)
   const getVisibleReels = () => {
