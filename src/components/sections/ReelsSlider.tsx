@@ -1,17 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-function InstagramIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    </svg>
-  );
-}
+import { ChevronLeft, ChevronRight, Instagram } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 
@@ -66,7 +56,7 @@ export function ReelsSlider() {
         {/* Header */}
         <AnimatedSection direction="up" className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-5 py-2 mb-6">
-            <InstagramIcon className="w-4 h-4 text-brand-accent" />
+            <Instagram className="w-4 h-4 text-brand-accent" />
             <span className="text-brand-accent text-sm font-bold tracking-wider uppercase">
               @freshgreengardening
             </span>
@@ -145,7 +135,7 @@ export function ReelsSlider() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white font-bold px-8 py-4 rounded-full hover:shadow-[0_0_30px_rgba(236,72,153,0.4)] hover:scale-105 transition-all duration-300 text-sm uppercase tracking-wider"
           >
-            <InstagramIcon className="w-5 h-5" />
+            <Instagram className="w-5 h-5" />
             Follow Us on Instagram
           </Link>
         </AnimatedSection>
