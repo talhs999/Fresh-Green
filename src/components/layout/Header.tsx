@@ -38,15 +38,15 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6">
         <div
           className={cn(
-            "relative flex items-center justify-between md:justify-center mx-auto max-w-7xl rounded-full transition-colors duration-300",
+            "flex items-center justify-between mx-auto max-w-7xl rounded-full transition-colors duration-300",
             isScrolled
               ? "bg-[#F2FAF1]/95 backdrop-blur-md shadow-lg border-b border-brand-dark/10 px-6 py-3"
               : "bg-[#F2FAF1]/95 backdrop-blur-sm shadow-xl px-6 py-4"
           )}
         >
-          {/* Logo - Fixed to Left on Desktop */}
-          <div className="z-10 md:absolute md:left-8">
-            <Link href="/" className="flex items-center group shrink-0">
+          {/* Left: Logo */}
+          <div className="flex-1 flex justify-start">
+            <Link href="/" className="flex items-center group shrink-0 pl-4 md:pl-6">
               <Image 
                 src={headerLogo} 
                 alt="Fresh Green Gardening Logo" 
@@ -57,8 +57,8 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Nav - Naturally Centered via md:justify-center on parent */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Center: Nav */}
+          <nav className="hidden md:flex justify-center items-center gap-8 px-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -70,8 +70,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right side / Mobile Actions - Fixed to Right on Desktop */}
-          <div className="z-10 md:absolute md:right-8 flex items-center gap-4">
+          {/* Right: Actions / Placeholder */}
+          <div className="flex-1 flex justify-end items-center pr-4 md:pr-6">
             <button
               className="text-brand-dark hover:text-brand-primary transition-colors md:hidden"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

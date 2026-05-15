@@ -67,6 +67,7 @@ export default function Home() {
                 </Button>
               </AnimatedSection>
             </div>
+            </div>
           </div>
         </div>
       </section>
